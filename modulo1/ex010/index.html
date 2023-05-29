@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens resosivas</title>
+</head>
+<body>
+    <h1>imagesn em sites reponsivos</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplismente aumente ou diminua o tamanho d navegador
+        se ultilza a tag "sourch=media-type" para adapitar a imagen automatica  </p>
+    <picture>
+        <p>Respeite a ordem</p>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M.png" type="image/png">
+        
+        <img src="imagens/foto-G.png" alt="imagen-fléxivel">
+    </picture>
+    <h2>Aprendendo a usar audio em sites com HTML</h2>
+    <audio preload="metadata" autoplay controls loop >
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente o seu navegar não consegui reproduzir audio 
+            acesse esse link <a href="midias/guanacast-33.mp3"></a> para baixar esse aquivo mp3
+            </a>
+        </p>
+    </audio>
+</body>
+</html>

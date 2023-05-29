@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modelos de caixas</title>
+    <style>
+      h1 {
+        /*
+          Box-level*/
+        background-color: lightgrey;
+        height: 300px;
+        width: 300px;
+
+        border: 20px solid darkgoldenrod;
+
+        padding: 10px;
+
+        margin: 20px 20px 20px 40px;
+
+        outline: 5px dashed red;
+      }
+      /*
+        Inline-level
+        */
+      a {
+        display: block;
+        padding: 10px;
+        border: 10px dashed rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>
+      Páragrafos tambem sao exemplos de box level,mas os
+      <a href="#">Links tambem sao exemplos de box-level</a>. Vamos ver como
+      tudo isso funciona
+    </p>
+  </body>
+</html>
