@@ -4,21 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>fundo fixo de tela</title>
     <style>
         body{
             height: 98vh;
-            background-color: black;
-            background-image: url('ex022/imagens/wallpaper002.jpg');
-            background-position: center center;
-            background-size: cover;
-        
+
+
+            /*Shorthand - backgroud 
+            color> image > position > repet> [size ele existe na shorthand mais nao esta funcionando] >
+             attachment
+            */
+            background: black url('ex022/imagens/wallpaper002.jpg')
+             center center
+            no-repeat  fixed;
+            background-size:cover ;
+
         }
         main{
             border-radius: 15px;
             border: 1px solid blue;
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
         }
