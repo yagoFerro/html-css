@@ -9,21 +9,19 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            border-collapse: collapse;
+            height: 300px;
             width: 300px;
-            border: 5px solid red;
+            border-collapse: collapse;
         }
-        tr.linha{
-            background-color: gray;
-        }
-
         td{
+            border: 1px solid black;
             padding: 8px;
-            border:1px solid black ;
+            text-align: center;/*Alinhamento Horizontal*/
+            vertical-align: middle;/*Alinhamneto Vertical*/
         }
 
-        td.dado{
-            background-color: yellow;
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -45,12 +43,12 @@
         <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr class="linha">
             <td>A4</td>

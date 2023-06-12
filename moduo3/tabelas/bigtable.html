@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabelas grandes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 450px;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      thead,
+      tfoot {
+        background-color: gray;
+        color: white;
+      }
+      td.num{
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uso de tabelas grande</h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT 
+                TR, TD,TH
+    -->
+    <table>
+      <thead>
+        <tr>
+          <th>Estado</th>
+          <th>População</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>São Paulo</td>
+          <td class=num>45 919 049</td>
+        </tr>
+        <tr>
+          <td>Minas gerais</td>
+          <td class=num>21 168 791</td>
+        </tr>
+        <tr>
+          <td>Rio de janeiro</td>
+          <td class=num>17 264 943</td>
+        </tr>
+        <tr>
+          <td>Bahia</td>
+          <td class=num>14 873 064</td>
+        </tr>
+        <tr>
+          <td>Paran</td>
+          <td class="num">11 453 243</td>
+        </tr>
+        <tr>
+          <td>Rio grande do sul</td>
+          <td class="num">11 377 239</td>
+        </tr>
+        <tr>
+          <td>Pernambuco</td>
+          <td class="num">9 557 071</td>
+        </tr>
+        <tr>
+          <td>Ceara</td>
+          <td class="num">9 132 078</td>
+        </tr>
+        <tr>
+          <td>Para</td>
+          <td class="num">8 602 865</td>
+        </tr>
+        <tr>
+          <td>Santa catarina</td>
+          <td class="num">7 164 788</td>
+        </tr>
+        <tr>
+          <td>Maranhão</td>
+          <td class="num">7 075 181</td>
+        </tr>
+        <tr>
+          <td>Goias</td>
+          <td class="num">7 018 534</td>
+        </tr>
+        <tr>
+          <td>Amazonas</td>
+          <td class="num">7 018 534</td>
+        </tr>
+        <tr>
+          <td>Espirito santo</td>
+          <td class="num">4 083 943</td>
+        </tr>
+        <tr>
+          <td>Paraiba</td>
+          <td class="num">4 325 678</td>
+        </tr>
+        <tr>
+          <td>Rio grande do norte</td>
+          <td class="num">3 456 236</td>
+        </tr>
+        <tr>
+          <td>Mato grosso</td>
+          <td class="num">3 651 726</td>
+        </tr>
+        <tr>
+          <td>Lagoas</td>
+          <td class="num">3 761 290</td>
+        </tr>
+        <tr>
+          <td>Piaui</td>
+          <td class="num">3 237 227</td>
+        </tr>
+        <tr>
+          <td>Distrito Federal</td>
+          <td class="num">3 015 268</td>
+        </tr>
+        <tr>
+          <td>Mato grosso do sul</td>
+          <td class="num">2 435 279</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total de habitantes</th>
+          <td class="num"><strong>210.321.867</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
