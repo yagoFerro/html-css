@@ -12,18 +12,37 @@
       table {
         width: 450px;
         border-collapse: collapse;
+        position: relative;
       }
       td,
       th {
         border: 1px solid black;
         padding: 10px;
       }
+      caption {
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color: gray;
+      }
+
       thead,
       tfoot {
         background-color: gray;
         color: white;
       }
-      td.num{
+      thead > tr > th {
+        position: sticky;
+        top: 0;
+        background-color: #383838;
+      }
+      tbody > tr:nth-child(even) {
+        font-weight: bold;
+        background-color: lightgray;
+      }
+
+      td.num {
         text-align: right;
       }
     </style>
@@ -41,28 +60,31 @@
                 TR, TD,TH
     -->
     <table>
+      <caption>
+        População federativa do brasil
+      </caption>
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 45px">População</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>São Paulo</td>
-          <td class=num>45 919 049</td>
+          <td class="num">45 919 049</td>
         </tr>
         <tr>
           <td>Minas gerais</td>
-          <td class=num>21 168 791</td>
+          <td class="num">21 168 791</td>
         </tr>
         <tr>
           <td>Rio de janeiro</td>
-          <td class=num>17 264 943</td>
+          <td class="num">17 264 943</td>
         </tr>
         <tr>
           <td>Bahia</td>
-          <td class=num>14 873 064</td>
+          <td class="num">14 873 064</td>
         </tr>
         <tr>
           <td>Paran</td>
@@ -135,10 +157,85 @@
       </tbody>
       <tfoot>
         <tr>
-          <th>Total de habitantes</th>
+          <th scope="row">Total de habitantes</th>
           <td class="num"><strong>210.321.867</strong></td>
         </tr>
       </tfoot>
     </table>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae
+      aspernatur perferendis dolor nisi. Ducimus quis numquam velit laborum
+      fugiat alias est harum a ipsa doloremque, culpa quidem odio enim. Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ducimus eius
+      earum consectetur veritatis quaerat perspiciatis, unde asperiores aliquam
+      quasi, voluptas nisi sed molestiae quos et omnis dolores, corporis
+      maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Provident nemo voluptatem temporibus debitis dignissimos, quisquam
+      architecto mollitia sequi vero, minima tenetur suscipit ullam sunt,
+      voluptas iure. Voluptas incidunt qui modi. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Voluptatem aperiam cumque architecto labore
+      quod illum officia quibusdam esse, molestiae qui doloremque, alias illo
+      amet fugit nihil, vel porro pariatur expedita.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae
+      aspernatur perferendis dolor nisi. Ducimus quis numquam velit laborum
+      fugiat alias est harum a ipsa doloremque, culpa quidem odio enim. Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ducimus eius
+      earum consectetur veritatis quaerat perspiciatis, unde asperiores aliquam
+      quasi, voluptas nisi sed molestiae quos et omnis dolores, corporis
+      maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Provident nemo voluptatem temporibus debitis dignissimos, quisquam
+      architecto mollitia sequi vero, minima tenetur suscipit ullam sunt,
+      voluptas iure. Voluptas incidunt qui modi. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Voluptatem aperiam cumque architecto labore
+      quod illum officia quibusdam esse, molestiae qui doloremque, alias illo
+      amet fugit nihil, vel porro pariatur expedita.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae
+      aspernatur perferendis dolor nisi. Ducimus quis numquam velit laborum
+      fugiat alias est harum a ipsa doloremque, culpa quidem odio enim. Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ducimus eius
+      earum consectetur veritatis quaerat perspiciatis, unde asperiores aliquam
+      quasi, voluptas nisi sed molestiae quos et omnis dolores, corporis
+      maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Provident nemo voluptatem temporibus debitis dignissimos, quisquam
+      architecto mollitia sequi vero, minima tenetur suscipit ullam sunt,
+      voluptas iure. Voluptas incidunt qui modi. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Voluptatem aperiam cumque architecto labore
+      quod illum officia quibusdam esse, molestiae qui doloremque, alias illo
+      amet fugit nihil, vel porro pariatur expedita.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae
+      aspernatur perferendis dolor nisi. Ducimus quis numquam velit laborum
+      fugiat alias est harum a ipsa doloremque, culpa quidem odio enim. Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ducimus eius
+      earum consectetur veritatis quaerat perspiciatis, unde asperiores aliquam
+      quasi, voluptas nisi sed molestiae quos et omnis dolores, corporis
+      maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Provident nemo voluptatem temporibus debitis dignissimos, quisquam
+      architecto mollitia sequi vero, minima tenetur suscipit ullam sunt,
+      voluptas iure. Voluptas incidunt qui modi. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Voluptatem aperiam cumque architecto labore
+      quod illum officia quibusdam esse, molestiae qui doloremque, alias illo
+      amet fugit nihil, vel porro pariatur expedita.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae
+      aspernatur perferendis dolor nisi. Ducimus quis numquam velit laborum
+      fugiat alias est harum a ipsa doloremque, culpa quidem odio enim. Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ducimus eius
+      earum consectetur veritatis quaerat perspiciatis, unde asperiores aliquam
+      quasi, voluptas nisi sed molestiae quos et omnis dolores, corporis
+      maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Provident nemo voluptatem temporibus debitis dignissimos, quisquam
+      architecto mollitia sequi vero, minima tenetur suscipit ullam sunt,
+      voluptas iure. Voluptas incidunt qui modi. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Voluptatem aperiam cumque architecto labore
+      quod illum officia quibusdam esse, molestiae qui doloremque, alias illo
+      amet fugit nihil, vel porro pariatur expedita.
+    </p>
   </body>
 </html>
