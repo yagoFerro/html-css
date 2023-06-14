@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capition e Escopo de titulos em tabelas</title>
+    <title>Mésclagen de celulas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+
+        }
+        tr,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>escopo de titulos em tabelas</h1>
+    <h1>Mesclagen de celulas</h1>
+    <table>
+        <tr>
+            <td>A</td> <!--Espanção de coluna-->
+            <td colspan="2" >B</td>
+        </tr>
+        <tr>
+            <!--linha = Rowspan--><td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <!--coluna = Colspan--> <td colspan="2">M</td>
+        </tr>
+    </table>
 </body>
 </html>
