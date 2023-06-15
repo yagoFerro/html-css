@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex de Tabelas com escopo de grupos</title>
+    <style>
+        table{
+            border-collapse: collapse;
+
+        }
+        .cabeça{
+            color: white;
+            background-color:rgb(87, 85, 85) ;
+        }
+        .left{
+            background-color:rgb(87, 85, 85)  ;
+            text-align: left;
+            color: white;
+        }
+
+
+        td, th {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas com escopo de grupos</h1>
+    <!--Ver ecopo de blocos e escopo de grupos-->
+    <table>
+        <caption></caption>
+        <thead>
+            <tr class="cabeça">
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr class="cabeça">
+                <th>Notas 1</th>
+                <th>Notas 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matématica</td>
+                <td>7.3</td>
+                <td>9.0</td>
+                <td>5.7</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>4.6</td>
+                <td>7.0</td>
+                <td>3.9</td>
+            </tr>
+            <tr>
+                <td>Quimíca</td>
+                <td>6.8</td>
+                <td>5.9</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>5.8</td>
+                <td>8.9</td>
+                <td>7.8</td>
+            </tr>
+            <tr class="left">
+                <th colspan="4">Média de exatas</th>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>Hitória</td>
+                <td>6.8</td>
+                <td>9.7</td>
+                <td>4.6</td>
+            </tr>
+            <tr>
+                <td>Geográfia</td>
+                <td>8.9</td>
+                <td>5.8</td>
+                <td>7.8</td>
+            </tr>
+            <tr  class="left">
+                <th colspan="4">Média de humanas</th>
+                <td>6.2</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
