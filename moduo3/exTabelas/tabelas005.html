@@ -20,20 +20,37 @@
             padding: 8px;
             border: 1px solid black;
         }
+        .destaque{
+            background-color: chartreuse;
+        }
+        col.cnome{
+            background-color: chartreuse;
+        }
+        .vermelho{
+            background-color: red;
+        }
 
-
+        .amarelo{
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <h1>Exercicio de tabelas</h1>
     <table>
+        <colgroup>
+            <col class="vermelho">
+            <col class="amarelo" span="2">
+            <col class="vermelho">
+
+        </colgroup>
         <caption>Cadrasto</caption>
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Sexo</th>
-                <th>Idade</th>
-                <th>Profisão</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profisão</th>
             </tr>
 
         </thead>
@@ -50,7 +67,7 @@
                 <td>28</td>
                 <td>Programador</td>
             </tr>
-            <tr class="destaque">
+            <tr>
                 <td>Gustavo</td>
                 <td>M</td>
                 <td>42</td>
